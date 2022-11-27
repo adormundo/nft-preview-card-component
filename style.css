@@ -38,7 +38,7 @@ body {
 }
 
 .card {
-  max-width: 35rem;
+  max-width: 34rem;
   max-height: 58rem;
   padding: 2rem;
   border-radius: 1rem;
@@ -55,14 +55,48 @@ body {
   color: var(--color-text-white);
 }
 
-.container img {
+.img-container {
+  position: relative;
+  display: flex;
+  
+  width: 100%;
+  height: 28rem;
+}
+
+
+.img-container img[alt*="equilibrium"] {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.box-view {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 100%;
   width: 100%;
   border-radius: 1rem;
+  
+  background-color: rgba(0, 255, 247, 0.5);
+  opacity: 0;
+}
+
+.box-view:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .container p {
   color: var(--color-text-blue);
   font-weight: 300;
+}
+
+.container h1:hover {
+  color: var(--color-text-cyan);
+  cursor: pointer;
 }
 
 .buy-container {
@@ -121,4 +155,9 @@ hr.solid {
 .author strong {
   color: var(--color-text-white);
   font-weight: 400;
+}
+
+.author strong:hover {
+  color: var(--color-text-cyan);
+  cursor: pointer;
 }
