@@ -1,0 +1,124 @@
+* {
+  font-size: 62.5%;
+  font-family: 'Outfit', sans-serif;
+
+  padding: 0;
+  border: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+  vertical-align: baseline;
+  list-style: none;
+
+  --bg-color-main: hsl(216, 54%, 11%);
+  --bg-color-card: hsl(216, 50%, 16%);
+  --color-line: hsl(215, 32%, 27%);
+  --color-text-white: hsl(0, 0%, 100%);
+  --color-text-blue: hsl(215, 51%, 70%);
+  --color-text-cyan: hsl(178, 100%, 50%);
+}
+
+body,
+p,
+span,
+h1,
+strong {
+  font-size: 1.8rem;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: var(--bg-color-main);
+}
+
+.card {
+  max-width: 35rem;
+  max-height: 58rem;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  background-color: var(--bg-color-card);
+  box-shadow: rgba(7, 14, 26, 0.144) 0 1.5rem 0 1.5rem,
+    rgba(8, 15, 26, 0.116) 0 0 0 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  color: var(--color-text-white);
+}
+
+.container img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.container p {
+  color: var(--color-text-blue);
+  font-weight: 300;
+}
+
+.buy-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-container img[alt*='ethereum'] {
+  width: 1.1rem;
+  height: 1.8rem;
+}
+
+.buy-container img[alt*='clock'] {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.price {
+  display: flex;
+  gap: 0.8rem;
+  color: var(--color-text-cyan);
+  font-weight: 700;
+  align-items: center;
+}
+
+.dayslaft {
+  display: flex;
+  gap: 0.8rem;
+  color: var(--color-text-blue);
+  align-items: center;
+}
+
+hr.solid {
+  border-top: 0.1rem solid var(--color-line);
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author img {
+  width: 10%;
+  border-radius: 50%;
+  border: solid 0.1rem var(--color-text-white);
+}
+
+.author span {
+  color: var(--color-text-blue);
+  font-weight: 400;
+}
+
+.author strong {
+  color: var(--color-text-white);
+  font-weight: 400;
+}
